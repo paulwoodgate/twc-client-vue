@@ -8,7 +8,7 @@
         v-for="event in events"
         :key="event.id"
         :footer="event.type"
-        style="max-width: 15rem; min-width:14rem;"
+        style="max-width: 15rem; min-width: 14rem"
         class="mb-2"
       >
         <b-link :to="'/event/' + event.id">
