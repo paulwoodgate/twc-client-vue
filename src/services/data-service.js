@@ -1,16 +1,11 @@
 /* eslint-disable no-console */
 import axios from 'axios';
-//import dotenv from 'dotenv';
 
-// const apiUrl = 'http://localhost:3000/api';
-const apiUrl = process.env.VUE_APP_API_URL;
-console.log(process.env);
-console.log(process.env.API_URL);
 export default {
   getAllEvents: async () => {
     let events = [];
     await axios
-      .get(apiUrl + '/events/upcoming')
+      .get('/api/events/upcoming')
       .then(res => (events = res.data))
       .catch(err => console.log(err));
 
@@ -19,7 +14,7 @@ export default {
   getEventDetails: async eventId => {
     let event = {};
     await axios
-      .get(apiUrl + '/events/' + eventId)
+      .get('/api/events/' + eventId)
       .then(res => (event = res.data))
       .catch(err => console.log(err));
 
@@ -28,7 +23,7 @@ export default {
   getReportYears: async () => {
     let years = [];
     await axios
-      .get(apiUrl + '/reports/years')
+      .get('/api/reports/years')
       .then(res => (years = res.data))
       .catch(err => console.log(err));
 
@@ -37,7 +32,7 @@ export default {
   getYearReports: async year => {
     let reports = [];
     await axios
-      .get(apiUrl + '/reports/' + year)
+      .get('/api/reports/' + year)
       .then(res => (reports = res.data))
       .catch(err => console.log(err));
 
@@ -46,7 +41,7 @@ export default {
   getReportDetails: async reportId => {
     let report = {};
     await axios
-      .get(apiUrl + '/reports/detail/' + reportId)
+      .get('/api/reports/detail/' + reportId)
       .then(res => (report = res.data))
       .catch(err => console.log(err));
 
@@ -54,7 +49,7 @@ export default {
   },
   sendMessage: async message => {
     try {
-      await axios.post(apiUrl + '/messages', message);
+      await axios.post('/api/messages', message);
       return true;
     } catch (err) {
       console.log(err);

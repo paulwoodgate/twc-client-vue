@@ -6,7 +6,7 @@
     <b-row>
       <b-col></b-col>
       <b-col cols="10">
-        <b-form @submit="sendMessage" v-if="creatingMessage">
+        <b-form v-if="creatingMessage" @submit="sendMessage">
           <b-row class="mb-1">
             <b-col sm="2">
               <label for="name">Your Name:</label>
@@ -20,7 +20,7 @@
               <label for="email">Your Email:</label>
             </b-col>
             <b-col sm="10">
-              <b-form-input id="name" type="email" v-model="message.email" required></b-form-input>
+              <b-form-input id="name" v-model="message.email" type="email" required></b-form-input>
             </b-col>
           </b-row>
           <b-row class="mb-5">
@@ -42,8 +42,8 @@
         </b-form>
         <b-row v-if="!creatingMessage">
           <p>
-            Thank you for messaging The Walking Club. A member of the committee will be in contact shortly to
-            discuss you message.
+            Thank you for messaging The Walking Club. A member of the committee will be in contact
+            shortly to discuss you message.
           </p>
         </b-row>
       </b-col>
@@ -59,6 +59,9 @@ import EmailService from '../services/email-service';
 
 export default {
   name: 'ContactUs',
+  components: {
+    Banner
+  },
   data() {
     return {
       creatingMessage: true,
@@ -75,9 +78,6 @@ export default {
 
       this.creatingMessage = !success;
     }
-  },
-  components: {
-    Banner
   }
 };
 </script>

@@ -22,12 +22,16 @@
     </b-row>
     <b-row>
       <b-col></b-col>
-      <b-col><b>Photos by:</b> {{ report.photographer }}</b-col>
+      <b-col cols="10"><b>Photos by:</b> {{ report.photographer }}</b-col>
       <b-col></b-col>
     </b-row>
     <b-row>
       <b-col style="text-align: center;">
-        <div v-for="photo in report.photos" :key="photo" style="margin:10px; display: inline-block;">
+        <div
+          v-for="photo in report.photos"
+          :key="photo"
+          style="margin:10px; display: inline-block;"
+        >
           <b-img thumbnail :src="'/assets/photos/' + year + '/' + photo.file"></b-img>
           <p>{{ photo.caption }}</p>
         </div>
@@ -42,22 +46,22 @@ import DataService from '../services/data-service';
 
 export default {
   name: 'ReportDetails',
+  components: {
+    Banner
+  },
   props: ['id'],
   data() {
     return {
       report: {}
     };
   },
-  async created() {
-    this.report = await DataService.getReportDetails(this.id);
-  },
   computed: {
     year() {
       return this.id.substr(5, 4);
     }
   },
-  components: {
-    Banner
+  async created() {
+    this.report = await DataService.getReportDetails(this.id);
   }
 };
 </script>
