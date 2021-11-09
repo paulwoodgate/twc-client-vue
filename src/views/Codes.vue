@@ -1,21 +1,17 @@
 <template>
-  <b-container style="text-align:left" fluid>
+  <b-container style="text-align: left" fluid>
     <b-row class="mb-5">
       <Banner title="Behaviour Codes" />
     </b-row>
     <b-row>
-      <b-col></b-col>
-      <b-col cols="10">
+      <b-col md="1" />
+      <b-col md="10">
         <h4>The Walking Club Mobile Phone Code</h4>
         <ul>
-          <li>
-            Be considerate in the use of the phone to avoid disturbing other walkers.
-          </li>
+          <li>Be considerate in the use of the phone to avoid disturbing other walkers.</li>
           <li>Avoid use as far as possible whilst walking.</li>
           <li>Set on silent mode if possible.</li>
-          <li>
-            If you have to make or take a call, drop back out of earshot of other walkers.
-          </li>
+          <li>If you have to make or take a call, drop back out of earshot of other walkers.</li>
         </ul>
         <h4>The Walking Club Dog Code</h4>
         <ul>
@@ -39,12 +35,10 @@
             When a dog owner takes his/her own car there is no walk charge - since walk charges are
             mainly to cover fuel costs.
           </li>
-          <li>
-            For weekends away, members with dogs would need to make their own arrangements.
-          </li>
+          <li>For weekends away, members with dogs would need to make their own arrangements.</li>
         </ul>
       </b-col>
-      <b-col></b-col>
+      <b-col md="1" />
     </b-row>
   </b-container>
 </template>

@@ -6,7 +6,7 @@
     </b-row>
     <b-row>
       <b-col md="1" />
-      <b-col cols="10">
+      <b-col md="10">
         <h4>TAKE THE RIGHT KIT</h4>
         <p>
           With the weather changes that can occur while out walking, it is essential to know what

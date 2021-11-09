@@ -4,8 +4,8 @@
       <Banner title="Kit Checklist" />
     </b-row>
     <b-row>
-      <b-col></b-col>
-      <b-col cols="10">
+      <b-col md="1" />
+      <b-col md="10">
         <b-table-simple small borderless>
           <b-row>
             <b-col>
@@ -208,7 +208,7 @@
           </b-tbody>
         </b-table-simple>
       </b-col>
-      <b-col></b-col>
+      <b-col md="1" />
     </b-row>
   </b-container>
 </template>

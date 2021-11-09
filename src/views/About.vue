@@ -4,8 +4,8 @@
       <Banner title="About us" />
     </b-row>
     <b-row>
-      <b-col />
-      <b-col cols="10">
+      <b-col md="1" />
+      <b-col md="10">
         <p>
           Walks are led by one of the experienced club members who have led many walks over many
           years. Normally there are about 5 - 10 people on a walk, enough for some good conversation
@@ -76,7 +76,7 @@
           the occasional walk but with an additional walk charge of £3.00 per walk.
         </p>
       </b-col>
-      <b-col />
+      <b-col md="1" />
     </b-row>
   </b-container>
 </template>

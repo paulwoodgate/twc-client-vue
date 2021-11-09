@@ -1,5 +1,5 @@
 <template>
-  <b-container style="text-align:left" fluid>
+  <b-container style="text-align: left" fluid>
     <b-row class="mb-5">
       <Banner title="Admin Stuff" />
     </b-row>

@@ -1,9 +1,0 @@
-{
-  "plugins": ["prettier"],
-  "extends": ["plugin:vue/recommended", "prettier", "plugin:prettier/recommended"],
-  "rules": {
-    "no-multiple-empty-lines": "warn",
-    "no-var": "error",
-    "prefer-const": "warn"
-  }
-}
