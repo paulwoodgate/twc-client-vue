@@ -26,11 +26,11 @@
       <b-col></b-col>
     </b-row>
     <b-row>
-      <b-col style="text-align: center">
+      <b-col style="text-align: center;">
         <div
           v-for="photo in report.photos"
           :key="photo"
-          style="margin: 10px; display: inline-block"
+          style="margin:10px; display: inline-block;"
         >
           <b-img thumbnail :src="'/assets/photos/' + year + '/' + photo.file"></b-img>
           <p>{{ photo.caption }}</p>

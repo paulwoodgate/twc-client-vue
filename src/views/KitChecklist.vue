@@ -25,7 +25,9 @@
           <b-thead head-variant="dark">
             <b-th>Item</b-th>
             <b-th>Hill walking in winter, all walks in bad weather</b-th>
-            <b-th> Hill walking in summer, all walks in unpredictable weather </b-th>
+            <b-th>
+              Hill walking in summer, all walks in unpredictable weather
+            </b-th>
             <b-th>Summer non-hill walking</b-th>
           </b-thead>
           <b-tbody>

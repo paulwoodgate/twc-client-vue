@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3" style="height: 60px">
+  <div class="mb-3" style="height:60px;">
     <b-navbar toggleable="lg" type="dark" variant="success" fixed="top">
       <b-navbar-brand to="/" class="p-0">
         <img
