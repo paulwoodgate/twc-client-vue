@@ -143,7 +143,7 @@ router.beforeEach((to, from, next) => {
   const newRoute = to.matched
     .slice()
     .reverse()
-    .find(r => r.meta && r.meta.title);
+    .find((r) => r.meta && r.meta.title);
 
   if (newRoute) document.title = newRoute.meta.title;
 

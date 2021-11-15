@@ -28,12 +28,10 @@
       <b-col md="4">
         <b-table-simple striped outlined>
           <b-thead head-variant="dark">
-            <b-th colspan="2">
-              Upcoming Events
-            </b-th>
+            <b-th colspan="2"> Upcoming Events </b-th>
           </b-thead>
           <b-tbody>
-            <b-tr v-for="event in futureEvents" :key="event.id" style="text-align:left;">
+            <b-tr v-for="event in futureEvents" :key="event.id" style="text-align: left">
               <b-td>
                 <b-link :to="'/event/' + event.id" class="custom-link">
                   {{ event.shortDate }}
