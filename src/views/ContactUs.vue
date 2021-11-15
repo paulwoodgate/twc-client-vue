@@ -55,7 +55,6 @@
 <script>
 import Banner from '@/components/common/Banner.vue';
 import DataService from '../services/data-service';
-import EmailService from '../services/email-service';
 
 export default {
   name: 'ContactUs',
@@ -71,11 +70,7 @@ export default {
   methods: {
     async sendMessage(e) {
       e.preventDefault();
-      let success = await EmailService.sendEmail(this.message);
-      if (success) {
-        success = await DataService.sendMessage(this.message);
-      }
-
+      let success = await DataService.sendMessage(this.message);
       this.creatingMessage = !success;
     }
   }
