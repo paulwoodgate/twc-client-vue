@@ -3,23 +3,29 @@
     <b-row class="mb-5">
       <Banner title="Calendar" />
     </b-row>
-    <b-card-group deck>
-      <b-card
-        v-for="event in events"
-        :key="event.id"
-        :footer="event.type"
-        style="max-width: 15rem; min-width: 14rem"
-        class="mb-2"
-      >
-        <b-link :to="'/event/' + event.id">
-          <b-card-img v-if="event.image !== undefined" :src="'/assets/images/' + event.image" />
-          <b-card-title>{{ event.title }}</b-card-title>
-          <b-card-text>{{ event.formattedDate }}</b-card-text>
-          <b-card-text v-if="event.type == 'Walk'">{{ event.formattedLength }}</b-card-text>
-          <b-card-text>{{ event.leave }}</b-card-text>
-        </b-link>
-      </b-card>
-    </b-card-group>
+    <b-row>
+      <b-col md="1" />
+      <b-col>
+        <b-card-group deck>
+          <b-card
+            v-for="event in events"
+            :key="event.id"
+            :footer="event.type"
+            style="max-width: 16rem; min-width: 14rem"
+            class="mb-2"
+          >
+            <b-link :to="'/event/' + event.id">
+              <b-card-img v-if="event.image !== undefined" :src="'/assets/images/' + event.image" />
+              <b-card-title>{{ event.title }}</b-card-title>
+              <b-card-text>{{ event.date }}</b-card-text>
+              <b-card-text v-if="event.type == 'Walk'">{{ event.length }}</b-card-text>
+              <b-card-text>{{ event.leave }}</b-card-text>
+            </b-link>
+          </b-card>
+        </b-card-group>
+      </b-col>
+      <b-col md="1" />
+    </b-row>
   </b-container>
 </template>
 
@@ -38,7 +44,7 @@ export default {
     };
   },
   async created() {
-    this.events = await DataService.getAllEvents();
+    this.events = await DataService.getUpcomingEvents();
   }
 };
 </script>
@@ -47,5 +53,8 @@ export default {
 a {
   color: black;
   text-decoration: none;
+}
+.deck {
+  align-content: center;
 }
 </style>
