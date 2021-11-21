@@ -3,6 +3,18 @@
     <b-row class="mb-5">
       <Banner title="Calendar" />
     </b-row>
+    <b-row class="mb-3">
+      <b-col md="1" />
+      <b-col>
+        Events for:
+        <b-form-select
+          v-model="selectedMonth"
+          :options="availableMonths"
+          style="width: 150px; margin-left: 5px"
+          @input="monthSelected"
+        />
+      </b-col>
+    </b-row>
     <b-row>
       <b-col md="1" />
       <b-col>
@@ -40,11 +52,31 @@ export default {
   },
   data() {
     return {
-      events: []
+      selectedMonth: '',
+      allEvents: [],
+      events: [],
+      availableMonths: []
     };
   },
   async created() {
-    this.events = await DataService.getUpcomingEvents();
+    const data = await DataService.getUpcomingEvents();
+    this.allEvents = data.events;
+    this.events = this.allEvents;
+    this.availableMonths = data.months;
+  },
+  methods: {
+    async monthSelected() {
+      if (this.selectedMonth === '') {
+        this.events = this.allEvents;
+      } else {
+        this.events = this.allEvents.filter(this.filterEvents);
+      }
+      this.reports = [];
+      this.reports = await DataService.getYearReports(this.selectedYear);
+    },
+    filterEvents(ev) {
+      return ev.month === this.selectedMonth;
+    }
   }
 };
 </script>
