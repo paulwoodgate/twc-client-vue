@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Banner from '@/components/common/Banner.vue';
+import Banner from '@/components/Banner.vue';
 export default {
   components: {
     Banner

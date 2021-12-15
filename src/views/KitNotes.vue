@@ -128,17 +128,13 @@
           may fail. A whistle is particularly useful for indicating your position in mist and fog.
         </p>
 
-        <p>
-          If you do take a mobile into the countryside:
-        </p>
+        <p>If you do take a mobile into the countryside:</p>
         <ol>
           <li>
             Switch it off so that its ringing cannot spoil the silence or put it on vibrate mode.
             (see our telephone code)
           </li>
-          <li>
-            Pack it so that it cannot be damaged or get wet
-          </li>
+          <li>Pack it so that it cannot be damaged or get wet</li>
           <li>Only use it in emergency</li>
         </ol>
         <h4>LET'S GET COMFORTABLE</h4>
@@ -185,7 +181,7 @@
 </template>
 
 <script>
-import Banner from '@/components/common/Banner.vue';
+import Banner from '@/components/Banner.vue';
 export default {
   name: 'KitNotes',
   components: {
