@@ -62,13 +62,19 @@ export default {
       report: {}
     };
   },
-  watch: {
-    '$route.params.id': async function (id) {
+  methods: {
+    async loadData(id) {
+      window.scrollTo(0, 0);
       this.report = await DataService.getReportDetails(id);
     }
   },
+  watch: {
+    '$route.params.id': async function (id) {
+      await this.loadData(id);
+    }
+  },
   async created() {
-    this.report = await DataService.getReportDetails(this.id);
+    await this.loadData(this.id);
   }
 };
 </script>

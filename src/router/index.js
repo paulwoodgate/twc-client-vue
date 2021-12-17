@@ -12,6 +12,7 @@ import Reports from '@/views/Reports.vue';
 import ReportDetails from '@/views/ReportDetails.vue';
 import ContactUs from '@/views/ContactUs.vue';
 import Codes from '@/views/Codes.vue';
+import NotFound from '@/views/NotFound.vue';
 
 Vue.use(VueRouter);
 
@@ -129,6 +130,11 @@ const routes = [
     //   meta: {
     //     title: 'Import Events - The Walking Club'
     //   }
+  },
+  {
+    name: 'NotFound',
+    path: '*',
+    component: NotFound
   }
 ];
 
