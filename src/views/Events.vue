@@ -10,7 +10,7 @@
         <b-form-select
           v-model="selectedMonth"
           :options="availableMonths"
-          style="width: 150px; margin-left: 5px"
+          style="width: 180px; margin-left: 5px"
           @input="monthSelected"
         />
       </b-col>

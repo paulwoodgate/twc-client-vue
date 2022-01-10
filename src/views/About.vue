@@ -9,7 +9,7 @@
         <p>
           Walks are led by one of the experienced club members who have led many walks over many
           years. Normally there are about 5 - 10 people on a walk, enough for some good conversation
-          without being unwieldly. On walk days, we meet at points in Peterborough and Stamford, so
+          without being unwieldy. On walk days, we meet at points in Peterborough and Stamford, so
           that we minimise the cost of the walks. The only charge we make is to cover the cost of
           the fuel. This naturally varies with the number of walkers and the distance we have to
           travel.
@@ -19,7 +19,7 @@
           before the walk so that we can arrange cars. Our email address is
           <a href="mailto:peterboroughwalkingclub@gmail.com">peterboroughwalkingclub@gmail.com</a>.
           If subsequently you find that you cannot make it, please give us a ring or text and let us
-          know. If this is on the morning of the walk then ring Alan’s mobile; telephone numbers are
+          know. If this is on the morning of the walk then ring Alan's mobile; telephone numbers are
           in the newsletter.
         </p>
         <p>
@@ -72,7 +72,7 @@
         </b-table-simple>
         <p>
           Other rates are available for different family groupings. Please contact the membership
-          secretary for details. After their first walk, non–members are welcome to continue to join
+          secretary for details. After their first walk, non-members are welcome to continue to join
           the occasional walk but with an additional walk charge of £3.00 per walk.
         </p>
       </b-col>

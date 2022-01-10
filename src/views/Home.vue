@@ -62,6 +62,9 @@ export default {
   },
   async mounted() {
     this.events = await DataService.getUpcomingSummary();
+    if (localStorage.reportYear) {
+      localStorage.reportYear = -1;
+    }
   }
 };
 </script>

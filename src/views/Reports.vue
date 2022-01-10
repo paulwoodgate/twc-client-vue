@@ -41,12 +41,18 @@ export default {
   async created() {
     this.availableYears = await DataService.getReportYears();
     this.availableYears = this.availableYears.reverse();
-    this.selectedYear = this.availableYears[0];
+
+    this.selectedYear =
+      localStorage.reportYear && localStorage.reportYear != -1
+        ? localStorage.reportYear
+        : this.availableYears[0];
+
     this.reports = await DataService.getYearReports(this.selectedYear);
   },
 
   methods: {
     async yearSelected() {
+      localStorage.reportYear = this.selectedYear;
       this.reports = [];
       this.reports = await DataService.getYearReports(this.selectedYear);
     }
