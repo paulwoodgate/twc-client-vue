@@ -4,7 +4,7 @@ import Home from '../views/Home.vue';
 import About from '@/views/About.vue';
 import AdminStuff from '@/views/AdminStuff.vue';
 import FAQ from '@/views/Faq.vue';
-import Events from '@/views/Events.vue';
+import Calendar from '@/views/Calendar.vue';
 import EventDetails from '@/views/EventDetails.vue';
 import KitNotes from '@/views/KitNotes.vue';
 import KitChecklist from '@/views/KitChecklist.vue';
@@ -50,9 +50,9 @@ const routes = [
     }
   },
   {
-    name: 'events',
-    path: '/events',
-    component: Events,
+    name: 'calendar',
+    path: '/calendar',
+    component: Calendar,
     meta: {
       title: 'Calendar - The Walking Club'
     }

@@ -39,20 +39,22 @@ export default {
   },
 
   async created() {
-    this.availableYears = await DataService.getReportYears();
-    this.availableYears = this.availableYears.reverse();
-
-    this.selectedYear =
-      localStorage.reportYear && localStorage.reportYear != -1
-        ? localStorage.reportYear
-        : this.availableYears[0];
+    if (this.$session.exists('availableYears')) {
+      this.availableYears = JSON.parse(this.$session.get('availableYears'));
+    } else {
+      this.availableYears = await (await DataService.getReportYears()).reverse();
+      this.$session.set('availableYears', JSON.stringify(this.availableYears));
+    }
+    this.selectedYear = this.$session.exists('reportYear')
+      ? this.$session.get('reportYear')
+      : this.availableYears[0];
 
     this.reports = await DataService.getYearReports(this.selectedYear);
   },
 
   methods: {
     async yearSelected() {
-      localStorage.reportYear = this.selectedYear;
+      this.$session.set('reportYear', this.selectedYear);
       this.reports = [];
       this.reports = await DataService.getYearReports(this.selectedYear);
     }

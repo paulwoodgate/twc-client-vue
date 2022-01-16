@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3" style="height:60px;">
+  <div class="mb-3" style="height: 60px">
     <b-navbar toggleable="lg" type="dark" variant="success" fixed="top">
       <b-navbar-brand to="/" class="p-0">
         <img
@@ -21,7 +21,7 @@
             <b-dropdown-item to="/faq">FAQ</b-dropdown-item>
             <b-dropdown-item to="/contact">Contact us</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item to="/events">Calendar</b-nav-item>
+          <b-nav-item to="/calendar">Calendar</b-nav-item>
           <b-nav-item to="/reports">Reports</b-nav-item>
           <b-nav-item-dropdown text="Information">
             <b-dropdown-item to="/kitnotes">Kit Notes</b-dropdown-item>
@@ -29,12 +29,6 @@
             <b-dropdown-item to="/adminstuff">Admin Stuff</b-dropdown-item>
             <b-dropdown-item to="/codes">Behaviour Codes</b-dropdown-item>
           </b-nav-item-dropdown>
-          <!-- <b-nav-item-dropdown text="Admin">
-            <b-dropdown-item to="/admin/reports">Maintain Reports</b-dropdown-item>
-            <b-dropdown-divider></b-dropdown-divider>
-            <b-dropdown-item to="/admin/events">Maintain Events</b-dropdown-item>
-            <b-dropdown-item to="/admin/import">Import Events</b-dropdown-item>
-          </b-nav-item-dropdown> -->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

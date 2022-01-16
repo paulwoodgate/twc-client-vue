@@ -35,7 +35,12 @@
               :key="photo"
               style="margin: 10px; display: inline-block"
             >
-              <b-img thumbnail :src="'/assets/photos/' + report.year + '/' + photo.file"></b-img>
+              <b-img
+                thumbnail
+                :src="
+                  'https://ik.imagekit.io/wlaapxxvhpff/Photos/' + report.year + '/' + photo.file
+                "
+              ></b-img>
               <p>{{ photo.caption }}</p>
             </div>
           </b-col>
