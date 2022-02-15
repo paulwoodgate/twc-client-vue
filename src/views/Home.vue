@@ -73,7 +73,7 @@ a.custom-link {
 .Banner {
   background-image: url('/assets/images/GreatRidge.png');
   color: white;
-  height: 60vh;
+  height: 55vh;
   text-align: center;
 }
 @media screen and (min-width: 1601px) {

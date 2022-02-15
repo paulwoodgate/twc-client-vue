@@ -9,10 +9,20 @@
           height="60px"
           alt="Walking Club Logo"
         />
-        The Walking Club
+        <div class="d-none d-lg-inline ml-3">The Walking Club</div>
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse">
+        <template>
+          <img
+            src="/assets/images/hamburger.png"
+            class="d-inline-block align-center"
+            width="32px"
+            height="32px"
+            alt="Hamburger"
+          />
+        </template>
+      </b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mr-auto">
