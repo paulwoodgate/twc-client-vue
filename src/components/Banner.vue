@@ -12,10 +12,15 @@ export default {
   props: ['title'],
   computed: {
     backgroundUrl() {
-      var images = ['PeakSkyline', 'BradgatePark', 'OldJohn', 'KeswickPanorama', 'IvinghoeBeacon'];
-      var randomNumber = Math.floor(Math.random() * 5);
-      var url = `/assets/images/${images[randomNumber]}.png`;
-      return url;
+      const images = [
+        'PeakSkyline',
+        'BradgatePark',
+        'OldJohn',
+        'KeswickPanorama',
+        'IvinghoeBeacon'
+      ];
+      const randomNumber = Math.floor(Math.random() * 5);
+      return `/assets/images/${images[randomNumber]}.png`;
     }
   }
 };

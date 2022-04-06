@@ -37,7 +37,7 @@
         </p>
         <p>
           Before you join the club you are invited to join us on a walk to see what you think. If
-          you aren't an experienced walker re recommend you try one of the easier walks first.
+          you aren't an experienced walker we recommend you try one of the easier walks first.
         </p>
         <p>
           Members of the Walking Club receive a 10% discount at Go Outdoors at the former Stage 2
