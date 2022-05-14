@@ -32,8 +32,8 @@
           <b-col style="text-align: center">
             <div
               v-for="photo in report.photos"
-              :key="photo"
-              style="margin: 10px; display: inline-block"
+              :key="photo.file"
+              style="margin: 10px"
             >
               <b-img
                 thumbnail

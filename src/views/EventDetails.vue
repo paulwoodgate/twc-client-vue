@@ -101,8 +101,7 @@
     <b-row v-else-if="event.type == 'Social'">
       <b-container>
         <b-row>
-          <b-col cols="3">Location</b-col>
-          <b-col>{{ event.leave }}</b-col>
+          <b-col>Location: {{ event.leave }}</b-col>
         </b-row>
         <br />
         <b-row>
