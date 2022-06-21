@@ -9,14 +9,13 @@
         <h4>Mileage Payments</h4>
         <p>
           Assistance with fuel costs is given to drivers based on the following (last review date
-          April 2017).
+          June 2022).
         </p>
         <ul>
-          <li>Private petrol car – 20.0p</li>
-          <li>Private diesel car – 18.5p</li>
-          <li>Company petrol car – 15.5p</li>
-          <li>Company diesel car – 14.0p</li>
+          <li>Private petrol car – 25.0p</li>
+          <li>Private diesel car – 25.0p</li>
         </ul>
+        <P>In addition, any parking charges are divided among all of the walkers in the cars.</P>
         <h4>Walk/Walker Grading</h4>
         <b-table-simple striped>
           <b-thead head-variant="dark">

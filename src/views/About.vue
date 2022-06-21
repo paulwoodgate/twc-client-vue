@@ -19,7 +19,7 @@
           before the walk so that we can arrange cars. Our email address is
           <a href="mailto:peterboroughwalkingclub@gmail.com">peterboroughwalkingclub@gmail.com</a>.
           If subsequently you find that you cannot make it, please give us a ring or text and let us
-          know. If this is on the morning of the walk then ring Alan's mobile; telephone numbers are
+          know. If this is on the morning of the walk then ring either the walk leader or a member of the committee; telephone numbers are
           in the newsletter.
         </p>
         <p>
