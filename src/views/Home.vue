@@ -1,6 +1,5 @@
 <template>
   <b-container fluid>
-    <b-row />
     <b-row align-v="center" class="mb-4 Banner">
       <h2>
         Welcome to the Walking Club...<br />
@@ -75,6 +74,7 @@ a.custom-link {
   color: white;
   height: 55vh;
   text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 1601px) {
   .Banner {

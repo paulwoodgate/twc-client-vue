@@ -124,7 +124,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
+import Banner from '@/components/common/Banner.vue';
 import DataService from '../services/data-service';
 
 export default {
@@ -143,3 +143,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.buttonRow {
+  display: flex;
+  margin-top: 2;
+  text-align: center;
+  align-content: center;
+}
+</style>

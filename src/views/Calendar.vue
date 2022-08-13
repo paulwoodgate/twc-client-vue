@@ -1,7 +1,10 @@
 <template>
   <b-container fluid>
-    <b-row class="mb-5">
+    <b-row class="mb-3">
       <Banner title="Calendar" />
+    </b-row>
+    <b-row>
+      <Message message="All walks start at 10am unless stated" />
     </b-row>
     <b-row class="mb-3">
       <b-col md="1" />
@@ -18,23 +21,7 @@
     <b-row>
       <b-col md="1" />
       <b-col>
-        <b-card-group deck>
-          <b-card
-            v-for="event in events"
-            :key="event.id"
-            :footer="event.type"
-            style="max-width: 16rem; min-width: 14rem"
-            class="mb-2"
-          >
-            <b-link :to="'/event/' + event.id">
-              <b-card-img v-if="event.image !== undefined" :src="'/assets/images/' + event.image" />
-              <b-card-title>{{ event.title }}</b-card-title>
-              <b-card-text>{{ event.date }}</b-card-text>
-              <b-card-text v-if="event.type == 'Walk'">{{ event.length }}</b-card-text>
-              <b-card-text>{{ event.leave }}</b-card-text>
-            </b-link>
-          </b-card>
-        </b-card-group>
+        <CardGroup :events="this.events" />
       </b-col>
       <b-col md="1" />
     </b-row>
@@ -42,13 +29,17 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
+import Banner from '@/components/common/Banner.vue';
 import DataService from '../services/data-service';
+import CardGroup from '@/components/events/EventCardGroup.vue';
+import Message from '@/components/common/Message.vue';
 
 export default {
   name: 'Events',
   components: {
-    Banner
+    Banner,
+    CardGroup,
+    Message
   },
   data() {
     return {
@@ -85,13 +76,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-a {
-  color: black;
-  text-decoration: none;
-}
-.deck {
-  align-content: center;
-}
-</style>

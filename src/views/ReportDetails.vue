@@ -30,11 +30,7 @@
         </b-row>
         <b-row>
           <b-col style="text-align: center">
-            <div
-              v-for="photo in report.photos"
-              :key="photo.file"
-              style="margin: 10px"
-            >
+            <div v-for="photo in report.photos" :key="photo.file" style="margin: 10px">
               <b-img
                 thumbnail
                 :src="
@@ -51,8 +47,8 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
-import ReportList from '@/components/ReportList.vue';
+import Banner from '@/components/common/Banner.vue';
+import ReportList from '@/components/reports/ReportList.vue';
 import DataService from '../services/data-service';
 
 export default {

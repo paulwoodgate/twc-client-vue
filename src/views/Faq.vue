@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
+import Banner from '@/components/common/Banner.vue';
 export default {
   name: 'FAQ',
   components: {

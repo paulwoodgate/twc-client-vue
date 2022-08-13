@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
-import ReportList from '@/components/ReportList.vue';
+import Banner from '@/components/common/Banner.vue';
+import ReportList from '@/components/reports/ReportList.vue';
 import DataService from '../services/data-service';
 
 export default {
