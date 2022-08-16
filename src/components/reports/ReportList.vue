@@ -1,6 +1,10 @@
 <template>
   <b-card-group deck>
-    <b-card v-for="report in reports" :key="report.id" style="max-width: 12rem; margin-bottom: 1rem;">
+    <b-card
+      v-for="report in reports"
+      :key="report.id"
+      style="max-width: 12rem; min-width: 12rem; margin-bottom: 1rem"
+    >
       <b-link :to="'/report/' + report.id">
         <b-card-img
           :src="
